@@ -6,27 +6,27 @@ switch (true) {
         console.log("O Herói de nome " + heroi + " está no nível de ferro")
         break
 
-    case 1001 <= xp && xp <= 2000:
+    case 1001 >= xp && xp <= 2000:
         console.log("O Herói de nome " + heroi + " está no nível de bronze")
         break
 
-    case 2001 <= xp && xp <= 5000:
+    case 2001 >= xp && xp <= 5000:
         console.log("O Herói de nome " + heroi + " está no nível de prata")
         break
     
-    case 5001 <= xp && xp <= 7000:
+    case 5001 >= xp && xp <= 7000:
         console.log("O Herói de nome " + heroi + " está no nível de ouro")
         break
     
-    case 7001 <= xp && xp <= 8000:
+    case 7001 >= xp && xp <= 8000:
         console.log("O Herói de nome " + heroi + " está no nível de platina")
         break
 
-    case 8001 <= xp && xp <= 9000:
+    case 8001 >= xp && xp <= 9000:
         console.log("O Herói de nome " + heroi + " está no nível de Ascendente")
         break
 
-    case 9001 <= xp && xp <= 10000:
+    case 9001 >= xp && xp <= 10000:
         console.log("O Herói de nome " + heroi + " está no nível de Imortal")
         break
     
