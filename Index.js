@@ -1,36 +1,26 @@
-let heroi = "Lokzen"
-let xp = 8150
-
-switch (true) {
-    case xp <= 1000:
-        console.log("O Herói de nome " + heroi + " está no nível de ferro")
-        break
-
-    case 1001 >= xp && xp <= 2000:
-        console.log("O Herói de nome " + heroi + " está no nível de bronze")
-        break
-
-    case 2001 >= xp && xp <= 5000:
-        console.log("O Herói de nome " + heroi + " está no nível de prata")
-        break
-    
-    case 5001 >= xp && xp <= 7000:
-        console.log("O Herói de nome " + heroi + " está no nível de ouro")
-        break
-    
-    case 7001 >= xp && xp <= 8000:
-        console.log("O Herói de nome " + heroi + " está no nível de platina")
-        break
-
-    case 8001 >= xp && xp <= 9000:
-        console.log("O Herói de nome " + heroi + " está no nível de Ascendente")
-        break
-
-    case 9001 >= xp && xp <= 10000:
-        console.log("O Herói de nome " + heroi + " está no nível de Imortal")
-        break
-    
-    case xp >= 10001:
-        console.log("O Herói de nome " + heroi + " está no nível de Radiante")
-        break
+let heroi = {
+    nome: "Lokzen",
+    xp: 8150
 };
+
+let niveis = [
+    {nome: "Ferro", min: 0, max: 1000},
+    {nome: "Bronze", min: 1001, max: 2000},
+    {nome: "Prata", min: 2001, max: 5000},
+    {nome: "Ouro", min: 5001, max: 7000},
+    {nome: "Platina", min: 7001, max: 8000},
+    {nome: "Ascendente", min: 8001, max: 9000},
+    {nome: "Imortal", min: 9001, max: 10000},
+    {nome: "Radiante", min: 10001, max: Infinity }
+];
+
+let nivelDoHeroi = "";
+
+for (let nivel of niveis) {
+    if (heroi.xp >= nivel.min && heroi.xp <= nivel.max) {
+        nivelDoHeroi = nivel.nome;
+        break;
+    }
+}
+
+console.log("O herói de nome " + heroi.nome + " está no nível de " + nivelDoHeroi);
