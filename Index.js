@@ -24,3 +24,5 @@ for (let nivel of niveis) {
 }
 
 console.log("O herói de nome " + heroi.nome + " está no nível de " + nivelDoHeroi);
+
+console.log ("O heroi e foda")
